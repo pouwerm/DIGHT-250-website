@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<div class="navbar">
+    <ul>
+        <li><a href="index.html">McKenna Pouwer</li></a>
+        <li>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">About Me</button>
+                <div id="myDropdown" class="dropdown-content">
+                <a href="running.html">Running</a>
+                  <a href="Astronomy">Astronomy</a>
+                  <a href="resume.html">Resume</a>
+                  <a href="research.html">Research</a>
+                </div>
+                
+              </div>
+        </li>
+        <li><a href="contact.html">Contact</li></a>
+    </ul>
+</div>
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+
+<body>
+    
+</body>
+</html>

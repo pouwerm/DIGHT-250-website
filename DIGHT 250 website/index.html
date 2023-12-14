@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McKenna Pouwer</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<div class="navbar">
+    <ul>
+        <li><a href="index.html">McKenna Pouwer</li></a>
+        <li>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">About Me</button>
+                <div id="myDropdown" class="dropdown-content">
+                <a href="running.html">Running</a>
+                  <a href="Astronomy">Astronomy</a>
+                  <a href="resume.html">Resume</a>
+                  <a href="research.html">Research</a>
+                </div>
+                
+              </div>
+        </li>
+        <li><a href="contact.html">Contact</li></a>
+    </ul>
+</div>
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+
+<body>
+
+<div class="container">
+    <main>
+        <img src="../images/profilepic.png" alt="profilepic" class="custom-profilepic">
+        <body>
+            <h1>Public Health and <br>
+                Design Thinking Student at BYU</h1><br><br>
+ 
+                <div class="introh3"><h3>Hey There! My name is Kenna. <br>
+                    I'm from Houston Texas and currently attend Brigham Young University. <br>
+                    I'm interested in science, social impact, buisness, and just learning in general! <br>
+                </h3></div>
+
+        </body>
+    </main>
+    <div id="Content1"> </div>
+    <div id="Content2"></div>
+    <div id="Content3"></div>
+    <footer>Copyright &copy; 2023 McKenna Pouwer</footer>
+  </div>
+</body>
+
+</html>
