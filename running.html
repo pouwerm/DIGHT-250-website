@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McKenna Pouwer</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<div class="navbar">
+    <ul>
+        <li><a href="index.html">McKenna Pouwer</li></a>
+        <li>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">About Me</button>
+                <div id="myDropdown" class="dropdown-content">
+                <a href="running.html">Running</a>
+                  <a href="resume.html">Resume</a>
+                  <a href="research.html">Research</a>
+                
+                </div>
+              </div>
+        </li>
+        <li><a href="contact.html">Contact</li></a>
+    </ul>
+</div>
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+
+<body>
+
+<div class="container">
+    <main>
+        <body>
+            <h1> <div class="Runningheader">Running</div></h1>
+ 
+                <div class="runningintro"><h3>Running has been a passion of mine since I was a teenager. <br>
+                    Trail running is my prefered hobby, and I've been able to see some amazing views. <br>
+                    I'm currently working towards some bigger trail races in the future. Stay tuned!<br>
+                </h3></div>
+
+        </body>
+    </main>
+    <div id="Content1"> 
+      <div class="container">
+        <img src="../images/uvmrunning.png" alt="uvmrunningpic" class="uvmrunning">
+        <img src="../images/volcano.png" alt="voclano" class="volcano">
+        <img src="../images/hawaiirunning.png" alt="hawaiirunning" class="hawaiirunning">
+        <img src="../images/mehiking.png" alt="mehiking" class="mehiking">
+      </div>
+    </div>
+    <div id="Content2">
+
+    </div>
+    <div id="Content3">
+      <div class="ultrarunningtext">
+        <h4>I've always enjoyed running because it teaches <br>
+          me lessons on perservance and not giving up. <br>
+          One day I hope to run an ultra race. <br>
+          Courtney Dauwalter is an inspiration to me! <br>
+          She's an ultrarunner and has run many ultra races. </h4>
+      </div>
+      <iframe width="560" height="315" 
+      src="https://www.youtube.com/embed/xtxffRAg_3c?si=eogaBZimsPx2yobs" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <footer>Copyright &copy; 2023 McKenna Pouwer</footer>
+  </div>
+</body>
+
+</html>

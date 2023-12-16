@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McKenna Pouwer</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<div class="navbar">
+    <ul>
+        <li><a href="index.html">McKenna Pouwer</li></a>
+        <li>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">About Me</button>
+                <div id="myDropdown" class="dropdown-content">
+                <a href="running.html">Running</a>
+                  <a href="resume.html">Resume</a>
+                  <a href="research.html">Research</a>
+                </div>
+                
+              </div>
+        </li>
+        <li><a href="contact.html">Contact</li></a>
+    </ul>
+</div>
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+
+<body>
+
+<div class="container">
+    <main>
+        <img src="../images/profilepic.png" alt="profilepic" class="custom-profilepic">
+        <body>
+            <div class="contacttitle"><h1>Contact</h1></div>
+ 
+                <div class="contacttext"> <h3>The best way to contact me is through linkedin.<br>
+                  You can also email me at mckenna.pouwer@gmail.com<br>
+                </h3></div>
+
+        </body>
+    </main>
+    <div id="Content1"> </div>
+    <div id="Content2"></div>
+    <div id="Content3"></div>
+    <footer>Copyright &copy; 2023 McKenna Pouwer</footer>
+  </div>
+</body>
+
+</html>
